@@ -1,0 +1,41 @@
+{
+    "main":{
+        "hi": "Hi&nbsp;<div id='hand'>👋</div><div>,&nbsp;</div> I'm Nicolas :)",
+        "profile": "Fullstack Web Developer. 🇨🇴",
+        "skills": "With skills in technologies like HTML, CSS, JS, JAVA, SQL and GIT. "
+    },
+    "about":{
+        "subtitle": "About Me",
+        "content": "<p>I have been passionate about development since my college days when my computer science teacher introduced me to <a href='https://scratch.mit.edu/' target='_blank' rel='noopener'>Scratch</a>, interest increased shortly after when I met <a href='https://code.org/' target='_blank' rel='noopener'>code.org</a>. For a while, I immersed myself in block programming before getting into programming languages.</p>\n<p>I studied <strong>Computer Technology</strong>, there I met several development tools. Since then and due to the constant evolution of technology, I became self-taught. Currently, I try to put all my knowledge into practice, both in my work and in the projects I carry out.</p>\n<p>Because of my vision of creating solutions that improve the lives of others, I apply everything I learn in projects that I feel are practical not only for me, but for all the people who may come to visit them. But not all my life is programming, in my free time I like to exercise, share with my family, play videogames with my friends and strengthen my other passion,<strong> the music</strong> (I currently play guitar 🎸, piano in progress🎹.).</p>"
+    },
+    "exp":{
+        "subtitle": "Experience",
+        "ob1":{
+            "head": "<a href='https://www.giitic.com/' target='_blank' rel='noopener'>Giitic SAS</a> - 2022 / Currently",
+            "detail": "Junior Developer.",
+            "obs": "I develop and maintain the code of the different modules of the company, which are used by a variety of clients such as  <strong>domicilios.com, Adama, Ripley and others.</strong> "
+        }
+    },
+    "study":{
+        "subtitle": "Studies",
+        "ob1":{
+            "head": "<a href='https://www.uniminuto.edu/' target='_blank' rel='noopener'>UNIMINUTO</a> - 2021 / 2024",
+            "obs": "Computer Technology."
+        },
+        "ob2":{
+            "head": "<a href='https://www.usergioarboleda.edu.co/' target='_blank' rel='noopener'>Sergio Arboleda University</a> / <a href='https://www.mintic.gov.co' target='_blank' rel='noopener'>MINTIC Colombia</a> - 2021",
+            "obs": "Misión TIC 2022."
+        },
+        "ob3":{
+            "head": "<a href='http://rodolfollinasied.edu.co/' target='_blank' rel='noopener'>Rodolfo Llinás IED</a> - 2020",
+            "obs": "Bachelor's degree."
+        }
+    },
+    "projects":{
+        "subtitle": "Projects",
+        "content": "In progress ⚙️..."
+    },
+    "footer":{
+        "madeby":"Made by Nico :)"
+    }
+}

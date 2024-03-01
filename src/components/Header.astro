@@ -1,0 +1,110 @@
+---
+import Linkedin from "./socials/Linkedin.astro";
+import Instagram from "./socials/Instagram.astro";
+import Github from "./socials/Github.astro";
+import Mail from "./socials/Mail.astro";
+import Logo from "./Logo.astro";
+---
+
+<header class="header">
+  <section class="eh headtext">
+    <h2>nicodev</h2>
+  </section>
+  <section class="eh logo">
+    <Logo />
+  </section>
+  <section class="eh redes">
+    <div>
+      <Linkedin />
+      <Instagram />
+    </div>
+    <div>
+      <Github />
+      <Mail />
+    </div>
+  </section>
+</header>
+
+<style>
+  .header {
+    background-color: var(--bg-color);
+    background-image: var(--background);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: auto;
+    width: 100%;
+    max-height: 110px;
+    overflow: hidden;
+
+    position: sticky;
+    top: 0;
+
+    border-bottom: var(--font-color) 2px solid;
+    display: flex;
+
+    z-index: 99;
+  }
+
+  .eh {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+
+    flex: 1;
+  }
+
+  .logo {
+    justify-content: center;
+
+    .left,
+    .right {
+      transition: transform 1s;
+    }
+
+    .left {
+      animation: logo1 2s linear;
+    }
+
+    .right {
+      animation: logo2 2s linear;
+    }
+
+    :hover {
+      .left {
+        transform: translateX(-4px);
+      }
+
+      .right {
+        transform: translateX(4px);
+      }
+    }
+  }
+
+  .redes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    max-lines: 2;
+
+    svg {
+      transition-duration: 150ms;
+    }
+  }
+
+  .redes div {
+    display: flex;
+  }
+
+  @keyframes logo1 {
+    from {
+      transform: translateX(-5px);
+    }
+  }
+
+  @keyframes logo2 {
+    from {
+      transform: translateX(5px);
+    }
+  }
+</style>

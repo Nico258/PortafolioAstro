@@ -1,0 +1,41 @@
+{
+    "main":{
+        "hi": "Hola&nbsp;<div id='hand'>👋</div><div>,&nbsp;</div> soy Nicolas :)",
+        "profile": "Desarrollador Web Fullstack. 🇨🇴",
+        "skills": "Con habilidades en tecnologías como HTML, CSS, JS, JAVA, SQL y GIT. "
+    },
+    "about":{
+        "subtitle": "Sobre Mi",
+        "content": "<p>Soy un apasionado por el desarrollo desde mis días de colegio cuando mi profesor de informática me presentó <a href='https://scratch.mit.edu/' target='_blank' rel='noopener'>Scratch</a>, poco después el interés aumentó cuando conocí <a href='https://code.org/' target='_blank' rel='noopener'>code.org</a>. Durante un tiempo, me sumergí en la programación en bloques antes de adentrarme con los lenguajes de programación.</p>\n<p>Cursé la carrera <strong>Tecnología en Informática</strong>, allí conocí varias herramientas de desarrollo. Desde entonces y debido a la constante evolución de la tecnología, me convertí en un autodidacta. Actualmente intento poner en práctica todo mi conocimiento, tanto en mi trabajo como en los proyectos que realizo.</p>\n<p>Debido a mi visión de crear soluciones que mejoran la vida de los demás, aplico todo lo que aprendo en proyectos que siento que son prácticos no solo para mi, si no para todas las personas que puedan llegar a visitarlos. Pero no toda mi vida es programación, en mis tiempos libres me gusta ejercitarme, compartir con mi familia, jugar videojuegos con mis amigos y fortalecer mi otra pasión,<strong> la música</strong> (Actualmente toco la guitarra 🎸, piano en progreso🎹).</p>"
+    },
+    "exp":{
+        "subtitle": "Experiencia",
+        "ob1":{
+            "head": "<a href='https://www.giitic.com/' target='_blank' rel='noopener'>Giitic SAS</a> - 2022 / Actualmente",
+            "detail": "Desarrollador Junior.",
+            "obs": "Desarrollo y mantengo el código de los diferentes módulos de la empresa, los cuales son usados por variedad de clientes como <strong>domicilios.com, Adama, Ripley entre otros.</strong> "
+        }
+    },
+    "study":{
+        "subtitle": "Estudios",
+        "ob1":{
+            "head": "<a href='https://www.uniminuto.edu/' target='_blank' rel='noopener'>UNIMINUTO</a> - 2021 / 2024",
+            "obs": "Tecnología en Informática."
+        },
+        "ob2":{
+            "head": "<a href='https://www.usergioarboleda.edu.co/' target='_blank' rel='noopener'>Universidad Sergio Arboleda</a> / <a href='https://www.mintic.gov.co' target='_blank' rel='noopener'>MINTIC Colombia</a> - 2021",
+            "obs": "Misión TIC 2022."
+        },
+        "ob3":{
+            "head": "<a href='http://rodolfollinasied.edu.co/' target='_blank' rel='noopener'>Rodolfo Llinás IED</a> - 2020",
+            "obs": "Bachiller."
+        }
+    },
+    "projects":{
+        "subtitle": "Proyectos",
+        "content": "En proceso ⚙️..."
+    },
+    "footer":{
+        "madeby":"Hecho por Nico :)"
+    }
+}
