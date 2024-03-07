@@ -1,15 +1,50 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
+import Inicio from '../components/Inicio.astro';
+import About from '../components/About.astro';
+import Footer from '../components/Footer.astro';
 ---
 
 <Layout title="nicodev">
 	<Header></Header>
 	<main>
-		
+		<Inicio></Inicio>
+		<About></About>
 	</main>
+	<Footer></Footer>
 </Layout>
 
-<style>
+<style is:global>
+	.fade{
+		animation: fade linear both;
+		animation-timeline: view();
+		animation-range: entry 15% cover 25%;
+
+		&:hover{
+			.subtitulo svg{
+				transform: scale(1.1) translateX(1%);
+			}
+		}
+	}
+
+	.subtitulo{
+		display: flex;
+		align-items: center;
+		svg{
+			margin-right: 10px;
+			transition-duration: 0.5s;
+		}
+	}
 	
+	@keyframes fade {
+		from{
+			opacity: 0%;
+			transform: translateY(30px);
+		}
+
+		to{
+			opacity: 100%;
+		}
+	}
 </style>

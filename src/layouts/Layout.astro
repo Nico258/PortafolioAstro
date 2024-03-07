@@ -1,6 +1,6 @@
 ---
 interface Props {
-	title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
@@ -8,54 +8,98 @@ const { title } = Astro.props;
 
 <!doctype html>
 <html lang="en" data-theme="light">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="description" content="Hola 👋, soy Nicolas :) Desarrollador Fullstack de Colombia. &#x1F1E8;&#x1F1F4;">
-		<link rel="icon" type="image/png" href="src/resources/img/nerd-glasses.png" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta
+      name="description"
+      content="Hola 👋, soy Nicolas :) Desarrollador Fullstack de Colombia. 🇨🇴"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="src/resources/img/nerd-glasses.png"
+    />
 
-		<meta property="og:title" content="Portafolio nicodev" />
-    	<meta property="og:image" content="src/resources/img/mi-foto.png" />
+    <meta property="og:title" content="Portafolio nicodev" />
+    <meta property="og:image" content="src/resources/img/mi-foto.png" />
 
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <slot />
+  </body>
 </html>
 <style is:global>
-	:root[data-theme="light"]{
+  @font-face {
+    font-family: "Exo2";
+    src: url("src/resources/fonts/Exo2-Medium.ttf") format("truetype");
+  }
+  :root[data-theme="light"] {
     --bg-color: #d8d7d7;
     --font-color: #161515;
     --background: url(src/resources/img/fondo-claro.jpg);
-	}
+  }
 
-	:root[data-theme="dark"]{
-		--bg-color: #232222;
-		--font-color: #eeecec;
-		--transform-option: translateX(100%);
-		--background: url(src/resources/img/fondo-oscurojpg.jpg);
-	}
+  :root[data-theme="dark"] {
+    --bg-color: #232222;
+    --font-color: #eeecec;
+    --transform-option: translateX(100%);
+    --background: url(src/resources/img/fondo-oscurojpg.jpg);
+  }
 
-	.icon{
-    	stroke: var(--font-color);
-	}
+  .icon {
+    stroke: var(--font-color);
+  }
 
-	body{
-		margin: 0;
-		font-family: 'Exo2', Helvetica, sans-serif;
-		box-sizing: border-box;
-		background-color: var(--bg-color);
-		background-image: var(--background);
-		background-repeat: no-repeat;
-		background-size: cover;
-		color: var(--font-color);
+  body {
+    margin: 0;
+    font-family: "Exo2", Helvetica, sans-serif;
+    box-sizing: border-box;
+    background-color: var(--bg-color);
+    background-image: var(--background);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--font-color);
 
-		animation: fade 1500ms ease;
-	}
+    animation: fade 1500ms ease;
+  }
 
-	.redes svg:hover {
-		transform: scale(1.08);
-	}
+  h1 {
+    font-size: 50px;
+    margin: 20px 0;
+  }
+
+  h2 {
+    font-size: 35px;
+    padding-bottom: 2px;
+  }
+
+  h3 {
+    font-size: 30px;
+  }
+
+  h4 {
+    font-size: 25px;
+  }
+
+  h5 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 20px;
+    text-wrap: balance;
+  }
+
+  a {
+    all: unset;
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  a:hover {
+    cursor: pointer;
+  }
 </style>
