@@ -1,0 +1,64 @@
+---
+interface Props {
+    item:string;
+    section:string;
+    h4_value:string;
+    h5_value?:string;
+    p_value:string;
+}
+
+const {
+    item, section, h4_value, h5_value, p_value
+} = Astro.props;
+---
+
+<div class="ele-exp">
+  <svg
+    class="icon-tabler icon-tabler-arrow-ramp-left-2"
+    viewBox="0 0 24 24"
+    stroke-width="2"
+    stroke="currentColor"
+    fill="none"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+      d="M18 3v8.707"></path><path d="M8 14l-4 -4l4 -4"></path><path
+      d="M18 21c0 -6.075 -4.925 -11 -11 -11h-3"></path></svg
+  >
+  <h4 data-section={section} data-item={item} data-value={h4_value} >
+    <slot name="h4"/>
+  </h4>
+  <h5 data-section={section} data-item={item} data-value={h5_value} >
+    <slot name="h5"/>
+  </h5>
+  <p data-section={section} data-item={item} data-value={p_value}>
+    <slot name="p"/>
+  </p>
+</div>
+
+<style>
+  .ele-exp {
+    h4,
+    p {
+      margin: 0;
+    }
+
+    h5{
+        margin: 15px 0;
+    }
+
+    svg {
+      position: absolute;
+      top: 10px;
+      left: -9px;
+      width: 30px;
+      height: 30px;
+      transform: scaleX(-1);
+    }
+
+    position: relative;
+    padding-left: 20px;
+    padding-block: 9px;
+    border-left: var(--font-color) 3px solid;
+  }
+</style>

@@ -1,0 +1,30 @@
+---
+import Subtitle from "./sections/Subtitle.astro";
+import ExperienceSymbol from "./sections/ExperienceSymbol.astro";
+import Element from "./sections/Element.astro";
+---
+
+<section id="exp" class="fade">
+    <Subtitle text="Experiencia" section="exp" value="subtitle">
+        <ExperienceSymbol/>
+    </Subtitle>
+    <Element item="ob1" section="exp" h4_value="head" h5_value="detail" p_value="obs">
+        <Fragment slot="h4">
+            <a href="https://www.giitic.com/" target="_blank" rel="noopener"
+            >Giitic SAS</a> - 2022 / Actualmente
+        </Fragment>
+        <Fragment slot="h5">
+            Desarrollador Junior.
+        </Fragment>
+        <Fragment slot="p">
+            Desarrollo y mantengo el código de los diferentes módulos de la empresa, los
+            cuales son usados por variedad de clientes como <strong>domicilios.com, Adama, Ripley, entre otros.</strong>
+        </Fragment>
+    </Element>      
+</section>
+
+<style>
+    #exp{
+        padding: 20px 15%;
+    }
+</style>

@@ -1,12 +1,12 @@
 ---
 import AboutSymbol from "./sections/AboutSymbol.astro";
+import Subtitle from "./sections/Subtitle.astro";
 ---
 
 <article id="about" class="fade">
-    <div class="subtitulo">
-        <AboutSymbol></AboutSymbol>
-        <h2 data-section="about" data-value="subtitle">Sobre Mi</h2>
-    </div>
+    <Subtitle text="Sobre Mi" section="about" value="subtitle">
+        <AboutSymbol/>
+    </Subtitle>
     <div data-section="about" data-value="content">
         <p>
             Soy un apasionado por el desarrollo desde mis días de colegio cuando mi profesor de informática me

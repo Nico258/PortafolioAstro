@@ -1,4 +1,6 @@
 ---
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
 interface Props {
   title: string;
 }
@@ -28,7 +30,9 @@ const { title } = Astro.props;
     <title>{title}</title>
   </head>
   <body>
+    <Header />
     <slot />
+    <Footer />
   </body>
 </html>
 <style is:global>
@@ -101,5 +105,35 @@ const { title } = Astro.props;
 
   a:hover {
     cursor: pointer;
+  }
+
+  /*Fuentes en el celular*/
+  @media only screen and (max-width: 450px) {
+    h1 {
+      font-size: 40px;
+      margin: 20px 0;
+    }
+
+    h2 {
+      font-size: 30px;
+      padding-bottom: 2px;
+    }
+
+    h3 {
+      font-size: 25px;
+    }
+
+    h4 {
+      font-size: 22px;
+    }
+
+    h5 {
+      font-size: 20px;
+    }
+
+    p {
+      font-size: 15px;
+      text-wrap: balance;
+    }
   }
 </style>

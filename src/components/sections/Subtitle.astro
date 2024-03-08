@@ -1,0 +1,25 @@
+---
+interface Props{
+    text?: string;
+    section: string;
+    value: string;
+}
+
+const {text = "Default", section, value} = Astro.props;
+---
+
+<div class="subtitulo">
+    <slot/>
+    <h2 data-section={section} data-value={value}>{text}</h2>
+</div>
+
+<style>
+    .subtitulo{
+		display: flex;
+		align-items: center;
+		svg{
+			margin-right: 10px;
+			transition-duration: 0.5s;
+		}
+	}
+</style>
