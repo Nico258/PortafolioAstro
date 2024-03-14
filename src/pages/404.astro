@@ -1,1 +1,78 @@
-no existe
+---
+import Config from "../components/sections/Config.astro";
+import Layout from "../layouts/Layout.astro";
+const temardos = [
+  "https://www.youtube.com/embed/yKNxeF4KMsY?si=pLkaq62ShtuAXYua",
+  "https://www.youtube.com/embed/pXRviuL6vMY?si=IA_3v-vplSgPp3tC",
+  "https://www.youtube.com/embed/gnvi8DrLJXI?si=cGQUwio8E6vXLwgd",
+  "https://www.youtube.com/embed/q07Gd6Q-7dY?si=lcKse0tYSG_p-Ox1",
+  "https://www.youtube.com/embed/PaoCQHwTPg4?si=SD4Wkq88yO8XAGNI",
+  "https://www.youtube.com/embed/ApXoWvfEYVU?si=j71wyZnbBZB3x9fX",
+  "https://www.youtube.com/embed/n3nPiBai66M?si=4mTqb488_BqMxZIK",
+  "https://www.youtube.com/embed/pAgnJDJN4VA?si=poNOFfIYI4VGM0nS",
+  "https://www.youtube.com/embed/Xhh3_-JRnDc?si=FkTSFC9PAOG_dUr7",
+  "https://www.youtube.com/embed/mWRsgZuwf_8?si=35bOhAUbmVKxYNTy",
+  "https://www.youtube.com/embed/qHm9MG9xw1o?si=EwHukGoQR6fP7Vqz",
+];
+
+const src = temardos[Math.floor(Math.random() * 9)];
+---
+
+<Layout title="nicodev">
+  <main>
+    <Config />
+    <section class="content">
+      <h1 data-section="404" data-value="title">Página no encontrada</h1>
+      <h4 data-section="404" data-value="text">Pero te dejo con este tema</h4>
+      <iframe
+        src={src}
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      ></iframe>
+    </section>
+  </main>
+</Layout>
+
+<script>
+  import { changeLanguage } from "../app.js";
+  document
+    .getElementById("select-language")
+    ?.addEventListener("change", (event) => {
+      let target = event.target as HTMLSelectElement;
+      let language = target.value;
+      changeLanguage(language);
+    });
+</script>
+
+<style>
+  main {
+    margin: 0 50px;
+    padding: 35px 0;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    min-height: 62vh;
+  }
+
+  h1,
+  h4 {
+    margin: 0;
+  }
+
+  iframe {
+    border: 0;
+    border-radius: 20px;
+    margin-top: 20px;
+
+    aspect-ratio: 16/9;
+    width: 60%;
+    height: auto;
+    min-width: 300px;
+    max-width: 700px;
+  }
+</style>

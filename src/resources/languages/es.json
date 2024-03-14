@@ -40,5 +40,9 @@
     },
     "footer":{
         "madeby":"Hecho por Nico :)"
+    },
+    "404":{
+        "title":"Página no encontrada",
+        "text":"Pero te dejo con este tema"
     }
 }

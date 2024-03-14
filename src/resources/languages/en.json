@@ -40,5 +40,9 @@
     },
     "footer":{
         "madeby":"Made by Nico :)"
+    },
+    "404":{
+        "title":"Page Not Found",
+        "text":"But I'll leave you with this song"
     }
 }
