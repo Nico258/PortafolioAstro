@@ -70,7 +70,8 @@
 <script>
   import {changeLanguage} from '../app.js';
   document.getElementById("select-language")?.addEventListener("change", (event) => {
-    let language = event.target.value;
+    let target = event.target as HTMLSelectElement;
+    let language = target.value;
     changeLanguage(language);
   });
 </script>
