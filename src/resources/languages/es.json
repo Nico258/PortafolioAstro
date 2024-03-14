@@ -1,6 +1,6 @@
 {
     "main":{
-        "hi": "Hola&nbsp;<div id='hand'>👋</div><div>,&nbsp;</div> soy Nicolas :)",
+        "hi": "Hola&nbsp;<div class='hand'>👋</div><div>,&nbsp;</div> soy Nicolas :)",
         "profile": "Desarrollador Web Fullstack. 🇨🇴",
         "skills": "Con habilidades en tecnologías como HTML, CSS, JS, JAVA, SQL y GIT. "
     },
@@ -20,14 +20,17 @@
         "subtitle": "Estudios",
         "ob1":{
             "head": "<a href='https://www.uniminuto.edu/' target='_blank' rel='noopener'>UNIMINUTO</a> - 2021 / 2024",
+            "detail": "",
             "obs": "Tecnología en Informática."
         },
         "ob2":{
             "head": "<a href='https://www.usergioarboleda.edu.co/' target='_blank' rel='noopener'>Universidad Sergio Arboleda</a> / <a href='https://www.mintic.gov.co' target='_blank' rel='noopener'>MINTIC Colombia</a> - 2021",
+            "detail": "",
             "obs": "Misión TIC 2022."
         },
         "ob3":{
             "head": "<a href='http://rodolfollinasied.edu.co/' target='_blank' rel='noopener'>Rodolfo Llinás IED</a> - 2020",
+            "detail": "",
             "obs": "Bachiller."
         }
     },

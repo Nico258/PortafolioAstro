@@ -1,0 +1,41 @@
+---
+import Subtitle from "./sections/Subtitle.astro";
+import StudySymbol from "./sections/StudySymbol.astro";
+import Element from "./sections/Element.astro";
+---
+
+<section id="study" class="fade">
+    <Subtitle text="Estudios" section="study" value="subtitle">
+        <StudySymbol/>
+    </Subtitle>
+    <Element item="ob1" section="study">
+        <Fragment slot="h4">
+            <a href="https://www.uniminuto.edu/" target="_blank" rel="noopener">UNIMINUTO</a> - 2021 / 2024
+        </Fragment>
+        <Fragment slot="p">
+            Tecnología en Informática.
+        </Fragment>
+    </Element>
+    <Element item="ob2" section="study">
+        <Fragment slot="h4">
+            <a href="https://www.usergioarboleda.edu.co/" target="_blank" rel="noopener">Universidad Sergio Arboleda</a> / <a href="https://www.mintic.gov.co" target="_blank" rel="noopener">MINTIC Colombia</a> - 2021
+        </Fragment>
+        <Fragment slot="p">
+            Misión TIC 2022.
+        </Fragment>
+    </Element>
+    <Element item="ob3" section="study">
+        <Fragment slot="h4">
+            <a href="http://rodolfollinasied.edu.co/" target="_blank" rel="noopener">Rodolfo Llinás IED</a> - 2020
+        </Fragment>
+        <Fragment slot="p">
+            Bachiller.
+        </Fragment>
+    </Element>
+</section>
+
+<style>
+    #study{
+        padding: 20px 15%;
+    }
+</style>

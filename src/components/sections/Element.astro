@@ -2,13 +2,10 @@
 interface Props {
     item:string;
     section:string;
-    h4_value:string;
-    h5_value?:string;
-    p_value:string;
 }
 
 const {
-    item, section, h4_value, h5_value, p_value
+    item, section
 } = Astro.props;
 ---
 
@@ -25,13 +22,13 @@ const {
       d="M18 3v8.707"></path><path d="M8 14l-4 -4l4 -4"></path><path
       d="M18 21c0 -6.075 -4.925 -11 -11 -11h-3"></path></svg
   >
-  <h4 data-section={section} data-item={item} data-value={h4_value} >
+  <h4 data-section={section} data-item={item} data-value="head" >
     <slot name="h4"/>
   </h4>
-  <h5 data-section={section} data-item={item} data-value={h5_value} >
+  <h5 data-section={section} data-item={item} data-value="detail" >
     <slot name="h5"/>
   </h5>
-  <p data-section={section} data-item={item} data-value={p_value}>
+  <p data-section={section} data-item={item} data-value="obs">
     <slot name="p"/>
   </p>
 </div>

@@ -4,7 +4,6 @@
       name="language"
       id="select-language"
       title="language"
-      onchange="changeLanguage(this.value)"
     >
       <option value="es"> &#x1F1E8;&#x1F1F4; ES</option>
       <option value="en"> 🇬🇧 EN</option>
@@ -57,7 +56,7 @@
   </section>
   <section class="elin">
     <h1 data-section="main" data-value="hi">
-      Hola <div id="hand">👋</div><div>,</div> soy Nicolas :)
+      Hola <div class="hand">👋</div><div>,</div> soy Nicolas :)
     </h1>
     <h3 data-section="main" data-value="profile">
       Desarrollador Web Fullstack. &#x1F1E8;&#x1F1F4;
@@ -67,6 +66,14 @@
     </p>
   </section>
 </div>
+
+<script>
+  import {changeLanguage} from '../app.js';
+  document.getElementById("select-language")?.addEventListener("change", (event) => {
+    let language = event.target.value;
+    changeLanguage(language);
+  });
+</script>
 
 <style>
   .language {
@@ -144,21 +151,10 @@
     padding: 40px 0;
   }
 
-  #hand {
-    animation: greeting 1s infinite alternate;
-    animation-play-state: paused;
-  }
-
   .fade {
     animation: fade linear both;
     animation-timeline: view();
     animation-range: entry 15% cover 25%;
-
-    &:hover {
-      .subtitulo {
-        transform: scale(1.02) translateX(1%);
-      }
-    }
   }
 
   .elin {
@@ -172,7 +168,7 @@
     }
 
     :hover {
-      #hand {
+      .hand {
         cursor: default;
         animation-play-state: running;
       }

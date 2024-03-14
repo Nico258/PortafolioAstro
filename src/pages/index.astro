@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import Inicio from '../components/Inicio.astro';
 import About from '../components/About.astro';
 import Experience from '../components/Experience.astro';
+import Study from '../components/Study.astro';
 ---
 
 <Layout title="nicodev">
@@ -10,6 +11,7 @@ import Experience from '../components/Experience.astro';
 		<Inicio/>
 		<About/>
 		<Experience/>
+		<Study/>
 	</main>
 </Layout>
 
@@ -33,6 +35,11 @@ import Experience from '../components/Experience.astro';
 			margin-right: 10px;
 			transition-duration: 0.5s;
 		}
+	}
+
+	.hand {
+		animation: greeting 1s infinite alternate;
+		animation-play-state: paused;
 	}
 	
 	@keyframes fade {
