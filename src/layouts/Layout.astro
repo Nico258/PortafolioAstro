@@ -20,11 +20,11 @@ const { title } = Astro.props;
     <link
       rel="icon"
       type="image/png"
-      href="src/resources/img/nerd-glasses.png"
+      href="img/nerd-glasses.png"
     />
 
     <meta property="og:title" content="Portafolio nicodev" />
-    <meta property="og:image" content="src/resources/img/mi-foto.png" />
+    <meta property="og:image" content="img/mi-foto.png" />
 
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
@@ -39,19 +39,19 @@ const { title } = Astro.props;
 <style is:global>
   @font-face {
     font-family: "Exo2";
-    src: url("src/resources/fonts/Exo2-Medium.ttf") format("truetype");
+    src: url("fonts/Exo2-Medium.ttf") format("truetype");
   }
   :root[data-theme="light"] {
     --bg-color: #d8d7d7;
     --font-color: #161515;
-    --background: url(src/resources/img/fondo-claro.jpg);
+    --background: url(img/fondo-claro.jpg);
   }
 
   :root[data-theme="dark"] {
     --bg-color: #232222;
     --font-color: #eeecec;
     --transform-option: translateX(100%);
-    --background: url(src/resources/img/fondo-oscurojpg.jpg);
+    --background: url(img/fondo-oscurojpg.jpg);
   }
 
   .icon {

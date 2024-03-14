@@ -31,7 +31,7 @@ const dinamicText = document.querySelectorAll("[data-section]");
 export async function changeLanguage (language) {
     language = language.includes('es') ? 'es':'en';
     localStorage.setItem("language", language);
-    const json = await fetch(`src/resources/languages/${language}.json`);
+    const json = await fetch(`languages/${language}.json`);
     const text = await json.json();
     
     for(const ttx of dinamicText){
