@@ -1,3 +1,3 @@
-Portafolio personal hecho con Astro.
+# Portafolio personal hecho con Astro.
 
-Puedes verlo en https://nicodev.vercel.app/
+Desplegado en https://www.nicodev.dev
